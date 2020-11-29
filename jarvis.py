@@ -57,8 +57,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gamail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('adityapandey2088888888@gmail.com', '28k2@#96@-#')
-    server.sendmail('adityapandey2088888888@gmail.com', to, content)
+    server.login('Your email address', 'your email password')
+    server.sendmail('Your email', to, content)
     server.close()
 
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             webbrowser.open("facebook.com")
 
         elif'open school' in query:
-            webbrowser.open("ingrails.com/school/parents?token=1601192998")
+            webbrowser.open("ingrails.com/school")
 
         elif'stackoverflow' in query:
             webbrowser.open("stackoverflow.com")
@@ -139,32 +139,32 @@ if __name__ == "__main__":
             speak("It's a beautiful name")
 
         elif'who is aditya ' in query:
-            speak("He is my creatoR, He control me and develop my system")
+            speak("He is my creator, He control me and develop my system")
 
         elif 'music 1' in query:
             speak("Playing musing.....")
-            music_dir = 'C:\\Users\\Lenovo\\Music\\favourite music'
+            music_dir = 'music path'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
 
         elif 'music ' in query:
             speak("Playing music.....")
-            music_dir = 'C:\\Users\\Lenovo\\Music\\favourite music'
+            music_dir = 'music path'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[3]))
 
         elif 'music 2' in query:
             speak("Playing musing.....")
-            music_dir = 'C:\\Users\\Lenovo\\Music\\favourite music'
+            music_dir = 'music path'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[2]))
 
         elif 'music 1' in query:
             speak("Playing musing.....")
-            music_dir = 'C:\\Users\\Lenovo\\Music\\favourite music'
+            music_dir = 'music path'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[1]))
@@ -173,7 +173,7 @@ if __name__ == "__main__":
             try:
                 speak("What should I say")
                 content = takecommand()
-                to = "adityapandey2088888888@gmail.com"
+                to = "Too whom yo want to send email"
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
