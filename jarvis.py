@@ -95,8 +95,6 @@ if __name__ == "__main__":
         elif'stackoverflow' in query:
             webbrowser.open("stackoverflow.com")
 
-        elif'who is manish' in query:
-            speak("manish is a boy with a cow hair")
 
         elif'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
